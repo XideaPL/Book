@@ -1,0 +1,29 @@
+{
+    "name": "xideapl/book",
+    "type": "library",
+    "description": "Xidea Book Component",
+    "keywords": [],
+    "homepage": "http://xidea.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artur Pszczółka",
+            "email": "artur.pszczolka@xidea.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-0": { "Xidea\\Component\\Book": "" }
+    },
+    "target-dir": "Xidea/Component/Book",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
