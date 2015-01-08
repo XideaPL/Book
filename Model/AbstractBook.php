@@ -44,6 +44,11 @@ abstract class AbstractBook implements BookInterface
      */
     protected $authors;
     
+    /*
+     * @var PublisherInterface
+     */
+    protected $publisher;
+    
     /**
      * @inheritDoc
      */
@@ -142,8 +147,27 @@ abstract class AbstractBook implements BookInterface
         }
     }
     
+    /**
+     * @inheritDoc
+     */
     public function removeAuthor(AuthorInterface $author)
     {
         $this->authors->removeElement($author);
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setPublisher(PublisherInterface $publisher)
+    {
+        $this->publisher = $publisher;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getPublisher()
+    {
+        return $this->publisher;
     }
 }
