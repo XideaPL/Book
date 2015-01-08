@@ -10,7 +10,7 @@
 namespace Xidea\Component\Book\Model;
 
 /**
- * @authors Artur Pszczółka <a.pszczolka@xidea.pl>
+ * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
 abstract class AbstractBook implements BookInterface
 {
