@@ -75,28 +75,28 @@ interface BookInterface
      * 
      * @param array $authors
      */
-    public function setAuthors($authors);
+    public function setBookAuthors($authors);
 
     /**
      * Returns the authors.
      *
      * @return array
      */
-    public function getAuthors();
+    public function getBookAuthors();
     
     /**
      * Adds the author.
      * 
      * @param BookAuthorInterface $author
      */
-    public function addAuthor(BookAuthorInterface $author);
+    public function addBookAuthor(BookAuthorInterface $author);
     
     /**
      * Removes the author.
      * 
      * @param BookAuthorInterface $author
      */
-    public function removeAuthor(BookAuthorInterface $author);
+    public function removeBookAuthor(BookAuthorInterface $author);
     
     /**
      * Sets the publisher.

@@ -42,7 +42,7 @@ abstract class AbstractBook implements BookInterface
     /*
      * @var array
      */
-    protected $authors;
+    protected $bookAuthors;
     
     /*
      * @var PublisherInterface
@@ -124,35 +124,35 @@ abstract class AbstractBook implements BookInterface
     /**
      * @inheritDoc
      */
-    public function setAuthors($authors)
+    public function setBookAuthors($authors)
     {
-        $this->authors = $authors;
+        $this->bookAuthors = $authors;
     }
 
     /**
      * @inheritDoc
      */
-    public function getAuthors()
+    public function getBookAuthors()
     {
-        return $this->authors;
+        return $this->bookAuthors;
     }
     
     /**
      * @inheritDoc
      */
-    public function addAuthor(BookAuthorInterface $author)
+    public function addBookAuthor(BookAuthorInterface $author)
     {
-        if (!$this->authors->contains($author)) {
-            $this->authors->add($author);
+        if (!$this->bookAuthors->contains($author)) {
+            $this->bookAuthors->add($author);
         }
     }
     
     /**
      * @inheritDoc
      */
-    public function removeAuthor(BookAuthorInterface $author)
+    public function removeBookAuthor(BookAuthorInterface $author)
     {
-        $this->authors->removeElement($author);
+        $this->bookAuthors->removeElement($author);
     }
     
     /**
