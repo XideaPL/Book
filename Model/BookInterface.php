@@ -87,16 +87,16 @@ interface BookInterface
     /**
      * Adds the author.
      * 
-     * @param AuthorInterface $author
+     * @param BookAuthorInterface $author
      */
-    public function addAuthor(AuthorInterface $author);
+    public function addAuthor(BookAuthorInterface $author);
     
     /**
      * Removes the author.
      * 
-     * @param AuthorInterface $author
+     * @param BookAuthorInterface $author
      */
-    public function removeAuthor(AuthorInterface $author);
+    public function removeAuthor(BookAuthorInterface $author);
     
     /**
      * Sets the publisher.

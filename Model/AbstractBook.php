@@ -140,7 +140,7 @@ abstract class AbstractBook implements BookInterface
     /**
      * @inheritDoc
      */
-    public function addAuthor(AuthorInterface $author)
+    public function addAuthor(BookAuthorInterface $author)
     {
         if (!$this->authors->contains($author)) {
             $this->authors->add($author);
@@ -150,7 +150,7 @@ abstract class AbstractBook implements BookInterface
     /**
      * @inheritDoc
      */
-    public function removeAuthor(AuthorInterface $author)
+    public function removeAuthor(BookAuthorInterface $author)
     {
         $this->authors->removeElement($author);
     }
