@@ -14,14 +14,14 @@ use Xidea\Component\Base\Loader\ObjectLoaderInterface;
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookLoaderInterface extends ObjectLoaderInterface
+interface BookAuthorLoaderInterface extends ObjectLoaderInterface
 {
     /**
-     * Returns a book by id.
+     * Returns a author by id.
      * 
      * @param int $id
      * 
-     * @return \Xidea\Component\Book\Model\BookInterface
+     * @return \Xidea\Component\Book\Model\AuthorInterface
      */
     function load($id);
 }

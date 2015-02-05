@@ -9,10 +9,12 @@
 
 namespace Xidea\Component\Book\Loader;
 
+use Xidea\Component\Base\Loader\ObjectLoaderInterface;
+
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface PublisherLoaderInterface
+interface PublisherLoaderInterface extends ObjectLoaderInterface
 {
     /**
      * Returns a publisher by id.
@@ -22,25 +24,4 @@ interface PublisherLoaderInterface
      * @return \Xidea\Component\Book\Model\PublisherInterface
      */
     function load($id);
-    
-    /**
-     * Returns all publishers.
-     * 
-     * @return array
-     */
-    function loadAll();
-    
-    /**
-     * Returns a set of publishers matching the criteria.
-     * 
-     * @return array
-     */
-    function loadBy(array $criteria, array $orderBy = array(), $limit = null, $offset = null);
-    
-    /**
-     * Returns publisher matching the criteria.
-     * 
-     * @return array
-     */
-    function loadOneBy(array $criteria, array $orderBy = array());
 }
