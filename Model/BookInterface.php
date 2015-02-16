@@ -9,13 +9,19 @@
 
 namespace Xidea\Component\Book\Model;
 
-use Xidea\Component\Product\Model\ProductInterface;
-
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookInterface extends ProductInterface
+interface BookInterface
 {
+
+    /**
+     * Returns the book id.
+     * 
+     * @return string The book id
+     */
+    public function getId();
+
     /**
      * Sets the book title.
      *
@@ -29,6 +35,40 @@ interface BookInterface extends ProductInterface
      * @return string
      */
     public function getTitle();
+
+    /**
+     * Sets the book description.
+     *
+     * @param string $description
+     */
+    public function setDescription($description);
+    
+    /**
+     * Returns the book description.
+     *
+     * @return string
+     */
+    public function getDescription();
+
+    /**
+     * @param datetime $createdAt
+     */
+    public function setCreatedAt(\DateTime $createdAt = null);
+
+    /**
+     * @return datetime
+     */
+    public function getCreatedAt();
+
+    /**
+     * @param datetime $updatedAt
+     */
+    public function setUpdatedAt(\DateTime $updatedAt = null);
+
+    /**
+     * @return datetime
+     */
+    public function getUpdatedAt();
 
     /**
      * Sets the authors.

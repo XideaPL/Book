@@ -9,16 +9,24 @@
 
 namespace Xidea\Component\Book\Builder;
 
-use Xidea\Component\Product\Builder\ProductDirector,
-    Xidea\Component\Product\Provider\AuthorProviderInterface;
+use Xidea\Component\Book\Provider\AuthorProviderInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-class BookDirector extends ProductDirector
+class BookDirector implements BookDirectorInterface
 {
-    public function __construct(BookBuilderInterface $bookBuilder, AuthorProviderInterface $authorProvider)
+    protected $bookBuilder;
+    
+    public function __construct(BookBuilderInterface $bookBuilder)
     {
-        parent::__construct($bookBuilder, $authorProvider);
+        $this->bookBuilder = $bookBuilder;
+    }
+    
+    public function build()
+    {
+        $this->bookBuilder->create();
+        
+        return $this->bookBuilder->getBook();
     }
 }
