@@ -9,31 +9,23 @@
 
 namespace Xidea\Component\Book\Builder;
 
-use Xidea\Component\Book\Model\AuthorInterface,
+use Xidea\Component\Book\Model\BookAuthorInterface,
     Xidea\Component\Book\Model\PublisherInterface;
+
+use Xidea\Component\Product\Builder\ProductBuilderInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookBuilderInterface
+interface BookBuilderInterface extends ProductBuilderInterface
 {
     /**
-     * @return void
+     * @param BookAuthorInterface $bookAuthor
      */
-    function create();
-    
-    /**
-     * @param AuthorInterface $author
-     */
-    function addAuthor(AuthorInterface $author);
+    function addBookAuthor(BookAuthorInterface $bookAuthor);
     
     /**
      * @param PublisherInterface $publisher
      */
     function setPublisher(PublisherInterface $publisher);
-    
-    /**
-     * @return \Xidea\Component\Book\Model\BookInterface
-     */
-    function getBook();
 }

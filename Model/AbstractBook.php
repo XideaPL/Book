@@ -9,35 +9,17 @@
 
 namespace Xidea\Component\Book\Model;
 
+use Xidea\Component\Product\Model\AbstractProduct;
+
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-abstract class AbstractBook implements BookInterface
+abstract class AbstractBook extends AbstractProduct implements BookInterface
 {
-    /*
-     * @var int
-     */
-    protected $id;
-    
     /*
      * @var string
      */
     protected $title;
-    
-    /*
-     * @var string
-     */
-    protected $description;
-    
-    /*
-     * @var datetime
-     */
-    protected $createdAt;
-    
-    /*
-     * @var datetime
-     */
-    protected $updatedAt;
     
     /*
      * @var array
@@ -48,14 +30,6 @@ abstract class AbstractBook implements BookInterface
      * @var PublisherInterface
      */
     protected $publisher;
-    
-    /**
-     * @inheritDoc
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
     
     /**
      * @inheritDoc
@@ -71,54 +45,6 @@ abstract class AbstractBook implements BookInterface
     public function getTitle()
     {
         return $this->title;
-    }
-    
-    /**
-     * @inheritDoc
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-    }
-    
-    /**
-     * @inheritDoc
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function setCreatedAt(\DateTime $createdAt = null)
-    {
-        $this->createdAt = $createdAt;
-    }
-    
-    /**
-     * @inheritDoc
-     */
-    public function getCreatedAt()
-    {
-        return $this->createdAt;
-    }
-    
-    /**
-     * @inheritDoc
-     */
-    public function setUpdatedAt(\DateTime $updatedAt = null)
-    {
-        $this->updatedAt = $updatedAt;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function getUpdatedAt()
-    {
-        return $this->updatedAt;
     }
     
     /**

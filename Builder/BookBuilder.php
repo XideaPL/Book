@@ -10,47 +10,27 @@
 namespace Xidea\Component\Book\Builder;
 
 use Xidea\Component\Book\Factory\BookFactoryInterface,
-    Xidea\Component\Book\Model\AuthorInterface,
+    Xidea\Component\Book\Model\BookAuthorInterface,
     Xidea\Component\Book\Model\PublisherInterface;
+
+use Xidea\Component\Product\Builder\ProductBuilder;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-class BookBuilder implements BookBuilderInterface
+class BookBuilder extends ProductBuilder implements BookBuilderInterface
 {
-    /**
-     * Currently built book.
-     *
-     * @var BookInterface
-     */
-    protected $book;
-
-    /**
-     * Book factory.
-     *
-     * @var BookFactoryInterface
-     */
-    protected $factory;
-
     public function __construct(BookFactoryInterface $bookFactory)
     {
-        $this->factory = $bookFactory;
+        parent::__construct($bookFactory);
     }
 
     /**
      * {@inheritdoc}
      */
-    public function create()
+    public function addBookAuthor(BookAuthorInterface $bookAuthor)
     {
-        $this->book = $this->factory->create();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function addAuthor(AuthorInterface $author)
-    {
-        $this->book->addAuthor($author);
+        $this->product->addBookAuthor($bookAuthor);
     }
     
     /**
@@ -60,13 +40,4 @@ class BookBuilder implements BookBuilderInterface
     {
         $this->book->setPublisher($publisher);
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getBook()
-    {
-        return $this->book;
-    }
-
 }

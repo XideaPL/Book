@@ -1,0 +1,110 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "44803f3c05dfd6fe90013b570f530885",
+    "packages": [
+        {
+            "name": "xideapl/base",
+            "version": "dev-master",
+            "target-dir": "Xidea/Component/Base",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/XideaPL/Base.git",
+                "reference": "f4b02501d9215035e9fb89ad059f231e065f88ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/XideaPL/Base/zipball/f4b02501d9215035e9fb89ad059f231e065f88ac",
+                "reference": "f4b02501d9215035e9fb89ad059f231e065f88ac",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Xidea\\Component\\Base": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Artur Pszczółka",
+                    "email": "artur.pszczolka@xidea.pl"
+                }
+            ],
+            "description": "Xidea Base Component",
+            "homepage": "http://xidea.pl",
+            "time": "2015-02-05 13:12:00"
+        },
+        {
+            "name": "xideapl/product",
+            "version": "dev-master",
+            "target-dir": "Xidea/Component/Product",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/XideaPL/Product.git",
+                "reference": "573674941d4474034483cea5ec31df2130dbc268"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/XideaPL/Product/zipball/573674941d4474034483cea5ec31df2130dbc268",
+                "reference": "573674941d4474034483cea5ec31df2130dbc268",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "xideapl/base": "dev-master@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Xidea\\Component\\Product": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Artur Pszczółka",
+                    "email": "artur.pszczolka@xidea.pl"
+                }
+            ],
+            "description": "Xidea Product Component",
+            "homepage": "http://xidea.pl",
+            "time": "2015-02-16 09:00:05"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "xideapl/base": 20,
+        "xideapl/product": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.3"
+    },
+    "platform-dev": []
+}
