@@ -60,6 +60,11 @@ abstract class AbstractBook implements BookInterface
     protected $binding;
     
     /*
+     * @var datetime
+     */
+    protected $premiere;
+    
+    /*
      * @var int
      */
     protected $releaseYear;
@@ -243,6 +248,22 @@ abstract class AbstractBook implements BookInterface
     public function getBinding()
     {
         return $this->binding;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setPremiere(\DateTime $premiere = null)
+    {
+        $this->premiere = $premiere;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getPremiere()
+    {
+        return $this->premiere;
     }
     
     /**

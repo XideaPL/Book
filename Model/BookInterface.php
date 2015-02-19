@@ -135,6 +135,16 @@ interface BookInterface
     public function getBinding();
     
     /**
+     * @param datetime $premiere
+     */
+    public function setPremiere(\DateTime $premiere = null);
+
+    /**
+     * @return datetime
+     */
+    public function getPremiere();
+    
+    /**
      * Sets the book release year.
      *
      * @param string $releaseYear
