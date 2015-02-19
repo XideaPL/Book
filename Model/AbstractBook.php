@@ -22,12 +22,72 @@ abstract class AbstractBook implements BookInterface
     /*
      * @var string
      */
+    protected $slug;
+    
+    /*
+     * @var string
+     */
+    protected $ean;
+    
+    /*
+     * @var string
+     */
+    protected $isbn;
+    
+    /*
+     * @var string
+     */
     protected $title;
     
     /*
      * @var string
      */
     protected $description;
+    
+    /*
+     * @var string
+     */
+    protected $shortDescription;
+    
+    /*
+     * @var string
+     */
+    protected $series;
+    
+    /*
+     * @var int
+     */
+    protected $binding;
+    
+    /*
+     * @var int
+     */
+    protected $releaseYear;
+    
+    /*
+     * @var int
+     */
+    protected $releaseNumber;
+    
+    /*
+     * @var int
+     */
+    protected $pages;
+    
+    /*
+     * @var string
+     */
+    protected $dimensions;
+    
+    /*
+     * @var float
+     */
+    protected $price;
+    
+    /*
+     * @var string
+     */
+    protected $imagePath;
     
     /*
      * @var datetime
@@ -55,6 +115,54 @@ abstract class AbstractBook implements BookInterface
     public function getId()
     {
         return $this->id;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setEan($ean)
+    {
+        $this->ean = $ean;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getEan()
+    {
+        return $this->ean;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setIsbn($isbn)
+    {
+        $this->isbn = $isbn;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getIsbn()
+    {
+        return $this->isbn;
     }
     
     /**
@@ -88,7 +196,151 @@ abstract class AbstractBook implements BookInterface
     {
         return $this->description;
     }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setShortDescription($shortDescription)
+    {
+        $this->shortDescription = $shortDescription;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getShortDescription()
+    {
+        return $this->shortDescription;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setSeries($series)
+    {
+        $this->series = $series;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getSeries()
+    {
+        return $this->series;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setBinding($binding)
+    {
+        $this->binding = $binding;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getBinding()
+    {
+        return $this->binding;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setReleaseYear($releaseYear)
+    {
+        $this->releaseYear = $releaseYear;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getReleaseYear()
+    {
+        return $this->releaseYear;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setReleaseNumber($releaseNumber)
+    {
+        $this->releaseNumber = $releaseNumber;
+    }
 
+    /**
+     * @inheritDoc
+     */
+    public function getReleaseNumber()
+    {
+        return $this->releaseNumber;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setPages($pages)
+    {
+        $this->pages = $pages;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getPages()
+    {
+        return $this->pages;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setDimensions($dimensions)
+    {
+        $this->dimensions = $dimensions;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getDimensions()
+    {
+        return $this->dimensions;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setImagePath($imagePath)
+    {
+        $this->imagePath = $imagePath;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getImagePath()
+    {
+        return $this->imagePath;
+    }
+    
     /**
      * @inheritDoc
      */
