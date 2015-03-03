@@ -65,6 +65,20 @@ interface BookInterface
     public function getIsbn();
     
     /**
+     * Sets the book category.
+     *
+     * @param string $category
+     */
+    public function setCategory($category);
+    
+    /**
+     * Returns the book category.
+     *
+     * @return string
+     */
+    public function getCategory();
+    
+    /**
      * Sets the book title.
      *
      * @param string $title

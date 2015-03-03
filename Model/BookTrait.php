@@ -32,6 +32,11 @@ trait BookTrait
     /*
      * @var string
      */
+    protected $category;
+    
+    /*
+     * @var string
+     */
     protected $title;
     
     /*
@@ -145,6 +150,22 @@ trait BookTrait
     public function getIsbn()
     {
         return $this->isbn;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getCategory()
+    {
+        return $this->category;
     }
     
     /**
