@@ -14,7 +14,9 @@ namespace Xidea\Component\Book\Model;
  */
 interface BookInterface
 {
-
+    const COVER_SOFT = 1;
+    const COVER_HARD = 2;
+    
     /**
      * Returns the book id.
      * 
@@ -135,18 +137,18 @@ interface BookInterface
     public function getSeries();
     
     /**
-     * Sets the book binding.
+     * Sets the book cover.
      *
-     * @param string $binding
+     * @param string $cover
      */
-    public function setBinding($binding);
+    public function setCover($cover);
     
     /**
-     * Returns the book binding.
+     * Returns the book cover.
      *
      * @return string
      */
-    public function getBinding();
+    public function getCover();
     
     /**
      * @param datetime $premiere

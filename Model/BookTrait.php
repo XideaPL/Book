@@ -57,7 +57,7 @@ trait BookTrait
     /*
      * @var int
      */
-    protected $binding;
+    protected $cover;
     
     /*
      * @var datetime
@@ -235,17 +235,17 @@ trait BookTrait
     /**
      * @inheritDoc
      */
-    public function setBinding($binding)
+    public function setCover($cover)
     {
-        $this->binding = $binding;
+        $this->cover = $cover;
     }
     
     /**
      * @inheritDoc
      */
-    public function getBinding()
+    public function getCover()
     {
-        return $this->binding;
+        return $this->cover;
     }
     
     /**
