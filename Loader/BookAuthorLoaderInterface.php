@@ -24,4 +24,11 @@ interface BookAuthorLoaderInterface extends ObjectLoaderInterface
      * @return \Xidea\Component\Book\Model\AuthorInterface
      */
     function load($id);
+    
+    /*
+     * @param string|array $name
+     * 
+     * @return array
+     */
+    function loadByName($name);
 }
