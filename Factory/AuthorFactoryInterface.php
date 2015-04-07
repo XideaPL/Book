@@ -12,17 +12,10 @@ namespace Xidea\Component\Book\Factory;
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-class BookAuthorFactory implements BookAuthorFactoryInterface
+interface AuthorFactoryInterface
 {
-    protected $class;
-    
-    public function __construct($class)
-    {
-        $this->class = $class;
-    }
-    
-    public function create()
-    {
-        return new $this->class;
-    }
+    /**
+     * @return \Xidea\Component\Book\Model\AuthorInterface
+     */
+    public function create();
 }

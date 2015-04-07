@@ -14,7 +14,7 @@ use Xidea\Component\Base\Loader\ObjectLoaderInterface;
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookAuthorLoaderInterface extends ObjectLoaderInterface
+interface AuthorLoaderInterface extends ObjectLoaderInterface
 {
     /**
      * Returns a author by id.

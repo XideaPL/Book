@@ -12,7 +12,7 @@ namespace Xidea\Component\Book\Model;
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookAuthorInterface
+interface AuthorInterface
 {
     /**
      * Returns the author id.

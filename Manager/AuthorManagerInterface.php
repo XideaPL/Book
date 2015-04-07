@@ -9,31 +9,31 @@
 
 namespace Xidea\Component\Book\Manager;
 
-use Xidea\Component\Book\Model\BookAuthorInterface;
+use Xidea\Component\Book\Model\AuthorInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookAuthorManagerInterface
+interface AuthorManagerInterface
 {
     /**
      * Saves a author.
      * 
-     * @param BookAuthorInterface $author
+     * @param AuthorInterface $author
      */
-    function save(BookAuthorInterface $author);
+    function save(AuthorInterface $author);
 
     /**
      * Updates a author.
      * 
-     * @param BookAuthorInterface $author
+     * @param AuthorInterface $author
      */
-    function update(BookAuthorInterface $author);
+    function update(AuthorInterface $author);
 
     /**
      * Deletes a author.
      * 
-     * @param BookAuthorInterface $author
+     * @param AuthorInterface $author
      */
-    function delete(BookAuthorInterface $author);
+    function delete(AuthorInterface $author);
 }

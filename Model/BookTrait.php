@@ -97,7 +97,7 @@ trait BookTrait
     /*
      * @var array
      */
-    protected $bookAuthors;
+    protected $authors;
     
     /*
      * @var PublisherInterface
@@ -363,35 +363,35 @@ trait BookTrait
     /**
      * @inheritDoc
      */
-    public function setBookAuthors($authors)
+    public function setAuthors($authors)
     {
-        $this->bookAuthors = $authors;
+        $this->authors = $authors;
     }
 
     /**
      * @inheritDoc
      */
-    public function getBookAuthors()
+    public function getAuthors()
     {
-        return $this->bookAuthors;
+        return $this->authors;
     }
     
     /**
      * @inheritDoc
      */
-    public function addBookAuthor(BookAuthorInterface $author)
+    public function addAuthor(AuthorInterface $author)
     {
-        if (!$this->bookAuthors->contains($author)) {
-            $this->bookAuthors->add($author);
+        if (!$this->authors->contains($author)) {
+            $this->authors->add($author);
         }
     }
     
     /**
      * @inheritDoc
      */
-    public function removeBookAuthor(BookAuthorInterface $author)
+    public function removeAuthor(AuthorInterface $author)
     {
-        $this->bookAuthors->removeElement($author);
+        $this->authors->removeElement($author);
     }
     
     /**

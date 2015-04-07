@@ -12,7 +12,7 @@ namespace Xidea\Component\Book\Model;
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-abstract class AbstractBookAuthor implements BookAuthorInterface
+abstract class AbstractAuthor implements AuthorInterface
 {
     /*
      * @var int
