@@ -18,291 +18,291 @@ interface BookInterface
     const COVER_HARD = 2;
     
     /**
-     * Returns the book id.
+     * Returns the id.
      * 
-     * @return string The book id
+     * @return string The id
      */
-    public function getId();
+    function getId();
 
     /**
-     * Sets the book slug.
+     * Sets the slug.
      *
      * @param string $slug
      */
-    public function setSlug($slug);
+    function setSlug($slug);
     
     /**
-     * Returns the book slug.
+     * Returns the slug.
      *
      * @return string
      */
-    public function getSlug();
+    function getSlug();
     
     /**
-     * Sets the book ean.
+     * Sets the ean.
      *
      * @param string $ean
      */
-    public function setEan($ean);
+    function setEan($ean);
     
     /**
-     * Returns the book ean.
+     * Returns the ean.
      *
      * @return string
      */
-    public function getEan();
+    function getEan();
     
     /**
-     * Sets the book isbn.
+     * Sets the isbn.
      *
      * @param string $isbn
      */
-    public function setIsbn($isbn);
+    function setIsbn($isbn);
     
     /**
-     * Returns the book isbn.
+     * Returns the isbn.
      *
      * @return string
      */
-    public function getIsbn();
+    function getIsbn();
     
     /**
-     * Sets the book category.
+     * Sets the category.
      *
      * @param string $category
      */
-    public function setCategory($category);
+    function setCategory($category);
     
     /**
-     * Returns the book category.
+     * Returns the category.
      *
      * @return string
      */
-    public function getCategory();
+    function getCategory();
     
     /**
-     * Sets the book title.
+     * Sets the name.
      *
-     * @param string $title
+     * @param string $name
      */
-    public function setTitle($title);
+    function setName($name);
     
     /**
-     * Returns the book title.
+     * Returns the name.
      *
      * @return string
      */
-    public function getTitle();
+    function getName();
 
     /**
-     * Sets the book description.
+     * Sets the description.
      *
      * @param string $description
      */
-    public function setDescription($description);
+    function setDescription($description);
     
     /**
-     * Returns the book description.
+     * Returns the description.
      *
      * @return string
      */
-    public function getDescription();
+    function getDescription();
     
     /**
-     * Sets the book short description.
+     * Sets the short description.
      *
      * @param string $shortDescription description
      */
-    public function setShortDescription($shortDescription);
+    function setShortDescription($shortDescription);
     
     /**
-     * Returns the book short description.
+     * Returns the short description.
      *
      * @return string
      */
-    public function getShortDescription();
+    function getShortDescription();
     
     /**
-     * Sets the book series.
+     * Sets the series.
      *
      * @param string $series
      */
-    public function setSeries($series);
+    function setSeries($series);
     
     /**
-     * Returns the book series.
+     * Returns the series.
      *
      * @return string
      */
-    public function getSeries();
+    function getSeries();
     
     /**
-     * Sets the book cover.
+     * Sets the cover.
      *
      * @param string $cover
      */
-    public function setCover($cover);
+    function setCover($cover);
     
     /**
-     * Returns the book cover.
+     * Returns the cover.
      *
      * @return string
      */
-    public function getCover();
+    function getCover();
     
     /**
      * @param datetime $premiere
      */
-    public function setPremiere(\DateTime $premiere = null);
+    function setPremiere(\DateTime $premiere = null);
 
     /**
      * @return datetime
      */
-    public function getPremiere();
+    function getPremiere();
     
     /**
-     * Sets the book release year.
+     * Sets the release year.
      *
      * @param string $releaseYear
      */
-    public function setReleaseYear($releaseYear);
+    function setReleaseYear($releaseYear);
     
     /**
-     * Returns the book release year.
+     * Returns the release year.
      *
      * @return string
      */
-    public function getReleaseYear();
+    function getReleaseYear();
     
     /**
-     * Sets the book release number.
+     * Sets the release number.
      *
      * @param string $releaseNumber
      */
-    public function setReleaseNumber($releaseNumber);
+    function setReleaseNumber($releaseNumber);
     
     /**
-     * Returns the book release number.
+     * Returns the release number.
      *
      * @return string
      */
-    public function getReleaseNumber();
+    function getReleaseNumber();
     
     /**
-     * Sets the book pages.
+     * Sets the pages.
      *
      * @param string $pages
      */
-    public function setPages($pages);
+    function setPages($pages);
     
     /**
-     * Returns the book pages.
+     * Returns the pages.
      *
      * @return string
      */
-    public function getPages();
+    function getPages();
     
     /**
-     * Sets the book dimensions.
+     * Sets the dimensions.
      *
      * @param string $dimensions
      */
-    public function setDimensions($dimensions);
+    function setDimensions($dimensions);
     
     /**
-     * Returns the book dimensions.
+     * Returns the dimensions.
      *
      * @return string
      */
-    public function getDimensions();
+    function getDimensions();
     
     /**
-     * Sets the book price.
+     * Sets the price.
      *
      * @param string $price
      */
-    public function setPrice($price);
+    function setPrice($price);
     
     /**
-     * Returns the book price.
+     * Returns the price.
      *
      * @return string
      */
-    public function getPrice();
+    function getPrice();
     
     /**
-     * Sets the book image path.
+     * Sets the image path.
      *
      * @param string $imagePath
      */
-    public function setImagePath($imagePath);
+    function setImagePath($imagePath);
     
     /**
-     * Returns the book image path.
+     * Returns the image path.
      *
      * @return string
      */
-    public function getImagePath();
+    function getImagePath();
 
     /**
      * @param datetime $createdAt
      */
-    public function setCreatedAt(\DateTime $createdAt = null);
+    function setCreatedAt(\DateTime $createdAt = null);
 
     /**
      * @return datetime
      */
-    public function getCreatedAt();
+    function getCreatedAt();
 
     /**
      * @param datetime $updatedAt
      */
-    public function setUpdatedAt(\DateTime $updatedAt = null);
+    function setUpdatedAt(\DateTime $updatedAt = null);
 
     /**
      * @return datetime
      */
-    public function getUpdatedAt();
+    function getUpdatedAt();
 
     /**
      * Sets the authors.
      * 
      * @param array $authors
      */
-    public function setAuthors($authors);
+    function setAuthors($authors);
 
     /**
      * Returns the authors.
      *
      * @return array
      */
-    public function getAuthors();
+    function getAuthors();
     
     /**
      * Adds the author.
      * 
      * @param AuthorInterface $author
      */
-    public function addAuthor(AuthorInterface $author);
+    function addAuthor(AuthorInterface $author);
     
     /**
      * Removes the author.
      * 
      * @param AuthorInterface $author
      */
-    public function removeAuthor(AuthorInterface $author);
+    function removeAuthor(AuthorInterface $author);
     
     /**
      * Sets the publisher.
      * 
      * @param PublisherInterface $publisher
      */
-    public function setPublisher(PublisherInterface $publisher);
+    function setPublisher(PublisherInterface $publisher);
 
     /**
      * Returns the publisher.
      *
      * @return PublisherInterface
      */
-    public function getPublisher();
+    function getPublisher();
 }

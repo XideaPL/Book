@@ -37,7 +37,7 @@ trait BookTrait
     /*
      * @var string
      */
-    protected $title;
+    protected $name;
     
     /*
      * @var string
@@ -171,17 +171,17 @@ trait BookTrait
     /**
      * @inheritDoc
      */
-    public function setTitle($title)
+    public function setName($name)
     {
-        $this->title = $title;
+        $this->name = $name;
     }
     
     /**
      * @inheritDoc
      */
-    public function getTitle()
+    public function getName()
     {
-        return $this->title;
+        return $this->name;
     }
     
     /**
