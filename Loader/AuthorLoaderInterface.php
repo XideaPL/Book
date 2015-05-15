@@ -9,12 +9,12 @@
 
 namespace Xidea\Component\Book\Loader;
 
-use Xidea\Component\Base\Loader\ObjectLoaderInterface;
+use Xidea\Component\Base\Loader\ModelLoaderInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface AuthorLoaderInterface extends ObjectLoaderInterface
+interface AuthorLoaderInterface extends ModelLoaderInterface
 {
     /**
      * Returns a author by id.

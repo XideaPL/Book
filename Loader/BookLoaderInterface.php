@@ -9,12 +9,12 @@
 
 namespace Xidea\Component\Book\Loader;
 
-use Xidea\Component\Base\Loader\ObjectLoaderInterface;
+use Xidea\Component\Base\Loader\ModelLoaderInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookLoaderInterface extends ObjectLoaderInterface
+interface BookLoaderInterface extends ModelLoaderInterface
 {
     /**
      * Returns a book by id.
