@@ -151,12 +151,12 @@ interface BookInterface
     function getCover();
     
     /**
-     * @param datetime $premiere
+     * @param \DateTime $premiere
      */
     function setPremiere(\DateTime $premiere = null);
 
     /**
-     * @return datetime
+     * @return \DateTime
      */
     function getPremiere();
     
@@ -231,36 +231,36 @@ interface BookInterface
     function getPrice();
     
     /**
-     * Sets the image path.
+     * Sets the image.
      *
-     * @param string $imagePath
+     * @param string $image
      */
-    function setImagePath($imagePath);
+    function setImage($image);
     
     /**
-     * Returns the image path.
+     * Returns the image.
      *
      * @return string
      */
-    function getImagePath();
+    function getImage();
 
     /**
-     * @param datetime $createdAt
+     * @param \DateTime $createdAt
      */
     function setCreatedAt(\DateTime $createdAt = null);
 
     /**
-     * @return datetime
+     * @return \DateTime
      */
     function getCreatedAt();
 
     /**
-     * @param datetime $updatedAt
+     * @param \DateTime $updatedAt
      */
     function setUpdatedAt(\DateTime $updatedAt = null);
 
     /**
-     * @return datetime
+     * @return \DateTime
      */
     function getUpdatedAt();
 

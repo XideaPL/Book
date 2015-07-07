@@ -92,7 +92,7 @@ trait BookTrait
     /*
      * @var string
      */
-    protected $imagePath;
+    protected $image;
     
     /*
      * @var array
@@ -347,17 +347,17 @@ trait BookTrait
     /**
      * @inheritDoc
      */
-    public function setImagePath($imagePath)
+    public function setImage($image)
     {
-        $this->imagePath = $imagePath;
+        $this->image = $image;
     }
     
     /**
      * @inheritDoc
      */
-    public function getImagePath()
+    public function getImage()
     {
-        return $this->imagePath;
+        return $this->image;
     }
     
     /**
