@@ -7,14 +7,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Manager;
+namespace Xidea\Book\Publisher;
 
-use Xidea\Component\Book\Model\PublisherInterface;
+use Xidea\Book\PublisherInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface PublisherManagerInterface
+interface ManagerInterface
 {
     /**
      * Saves a publisher.

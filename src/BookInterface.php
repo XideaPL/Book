@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Model;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
@@ -231,18 +231,18 @@ interface BookInterface
     function getPrice();
     
     /**
-     * Sets the image.
+     * Sets the image path.
      *
-     * @param string $image
+     * @param string $imagePath
      */
-    function setImage($image);
+    function setImagePath($imagePath);
     
     /**
-     * Returns the image.
+     * Returns the image path.
      *
      * @return string
      */
-    function getImage();
+    function getImagePath();
 
     /**
      * @param \DateTime $createdAt

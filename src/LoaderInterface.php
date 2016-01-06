@@ -7,15 +7,21 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Builder;
+namespace Xidea\Book;
+
+use Xidea\Base\Model\LoaderInterface as ModelLoaderInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookDirectorInterface
+interface LoaderInterface extends ModelLoaderInterface
 {
     /**
-     * @return \Xidea\Component\Book\Model\BookInterface
+     * Returns a book by id.
+     * 
+     * @param int $id
+     * 
+     * @return \Xidea\Book\BookInterface
      */
-    function build();
+    function load($id);
 }

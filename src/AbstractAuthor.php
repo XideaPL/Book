@@ -7,12 +7,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Model;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-abstract class AbstractPublisher implements PublisherInterface
+abstract class AbstractAuthor implements AuthorInterface
 {
     /*
      * @var int

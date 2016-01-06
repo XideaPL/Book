@@ -1,7 +1,7 @@
 {
     "name": "xideapl/book",
     "type": "library",
-    "description": "Xidea Book Component",
+    "description": "Xidea Book",
     "keywords": [],
     "homepage": "http://xidea.pl",
     "license": "MIT",
@@ -12,16 +12,15 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.4.0",
         "xideapl/base": "dev-master@dev"
     },
     "require-dev": {
+        "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
-        "psr-0": { "Xidea\\Component\\Book": "" }
+        "psr-4": { "Xidea\\Book\\": "src/" }
     },
-    "target-dir": "Xidea/Component/Book",
-    "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"

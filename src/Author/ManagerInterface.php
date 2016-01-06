@@ -7,14 +7,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Manager;
+namespace Xidea\Book\Author;
 
-use Xidea\Component\Book\Model\AuthorInterface;
+use Xidea\Book\AuthorInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface AuthorManagerInterface
+interface ManagerInterface
 {
     /**
      * Saves a author.

@@ -7,14 +7,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Manager;
-
-use Xidea\Component\Book\Model\BookInterface;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookManagerInterface
+interface ManagerInterface
 {
     /**
      * Saves a book.

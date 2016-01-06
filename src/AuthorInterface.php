@@ -7,36 +7,36 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Model;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface PublisherInterface
+interface AuthorInterface
 {
     /**
-     * Returns the publisher id.
+     * Returns the author id.
      * 
-     * @return string The publisher id
+     * @return string The author id
      */
     public function getId();
     
     /**
-     * Returns the publisher name.
+     * Returns the author name.
      *
      * @return string
      */
     public function getName();
     
     /**
-     * Sets the publisher description.
+     * Sets the author description.
      *
      * @param string $description
      */
     public function setDescription($description);
     
     /**
-     * Returns the publisher description.
+     * Returns the author description.
      *
      * @return string
      */

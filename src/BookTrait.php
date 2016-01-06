@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Model;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
@@ -92,7 +92,7 @@ trait BookTrait
     /*
      * @var string
      */
-    protected $image;
+    protected $imagePath;
     
     /*
      * @var array
@@ -347,17 +347,17 @@ trait BookTrait
     /**
      * @inheritDoc
      */
-    public function setImage($image)
+    public function setImagePath($imagePath)
     {
-        $this->image = $image;
+        $this->imagePath = $imagePath;
     }
     
     /**
      * @inheritDoc
      */
-    public function getImage()
+    public function getImagePath()
     {
-        return $this->image;
+        return $this->imagePath;
     }
     
     /**

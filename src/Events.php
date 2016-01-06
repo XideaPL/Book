@@ -7,12 +7,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-abstract class BookEvents
+abstract class Events
 {
     /**
      * The PRE_SAVE event occurs when the book is saved.
@@ -42,7 +42,7 @@ abstract class BookEvents
     /**
      * The CREATE_FORM_VALID event occurs when the create process is initialized.
      */
-    const CREATE_FORM_VALID = 'xidea_book.book.create_form_valid';
+    const FORM_VALID = 'xidea_book.book.form_valid';
     
     /**
      * The CREATE_COMPLETED event occurs when the create process is initialized.

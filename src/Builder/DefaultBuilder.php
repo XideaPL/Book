@@ -7,16 +7,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Builder;
+namespace Xidea\Book\Builder;
 
-use Xidea\Component\Book\Factory\BookFactoryInterface,
-    Xidea\Component\Book\Model\AuthorInterface,
-    Xidea\Component\Book\Model\PublisherInterface;
+use Xidea\Base\Model\FactoryInterface;
+use Xidea\Book\BuilderInterface;
+use Xidea\Book\AuthorInterface,
+    Xidea\Book\PublisherInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-class BookBuilder implements BookBuilderInterface
+class DefaultBuilder implements BuilderInterface
 {
     /**
      * Currently built book.
@@ -28,13 +29,13 @@ class BookBuilder implements BookBuilderInterface
     /**
      * Book factory.
      *
-     * @var BookFactoryInterface
+     * @var FactoryInterface
      */
     protected $factory;
 
-    public function __construct(BookFactoryInterface $bookFactory)
+    public function __construct(FactoryInterface $factory)
     {
-        $this->factory = $bookFactory;
+        $this->factory = $factory;
     }
 
     /**
@@ -43,6 +44,8 @@ class BookBuilder implements BookBuilderInterface
     public function create()
     {
         $this->book = $this->factory->create();
+        
+        return $this;
     }
 
     /**
@@ -51,6 +54,8 @@ class BookBuilder implements BookBuilderInterface
     public function addAuthor(AuthorInterface $author)
     {
         $this->book->addAuthor($author);
+        
+        return $this;
     }
     
     /**
@@ -59,6 +64,8 @@ class BookBuilder implements BookBuilderInterface
     public function setPublisher(PublisherInterface $publisher)
     {
         $this->book->setPublisher($publisher);
+        
+        return $this;
     }
 
     /**

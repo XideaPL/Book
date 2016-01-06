@@ -7,15 +7,15 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Factory;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface PublisherFactoryInterface
+interface DirectorInterface
 {
     /**
-     * @return \Xidea\Component\Book\Model\PublisherInterface
+     * @return \Xidea\Book\BookInterface
      */
-    public function create();
+    function build();
 }

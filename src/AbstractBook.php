@@ -7,27 +7,29 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Model;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-abstract class AbstractAuthor implements AuthorInterface
+abstract class AbstractBook implements BookInterface
 {
+    use BookTrait;
+    
     /*
      * @var int
      */
     protected $id;
     
     /*
-     * @var string
+     * @var datetime
      */
-    protected $name;
+    protected $createdAt;
     
     /*
-     * @var string
+     * @var datetime
      */
-    protected $description;
+    protected $updatedAt;
     
     /**
      * @inheritDoc
@@ -40,32 +42,32 @@ abstract class AbstractAuthor implements AuthorInterface
     /**
      * @inheritDoc
      */
-    public function setName($name)
+    public function setCreatedAt(\DateTime $createdAt = null)
     {
-        $this->name = $name;
+        $this->createdAt = $createdAt;
     }
     
     /**
      * @inheritDoc
      */
-    public function getName()
+    public function getCreatedAt()
     {
-        return $this->name;
+        return $this->createdAt;
     }
     
     /**
      * @inheritDoc
      */
-    public function setDescription($description)
+    public function setUpdatedAt(\DateTime $updatedAt = null)
     {
-        $this->description = $description;
+        $this->updatedAt = $updatedAt;
     }
-    
+
     /**
      * @inheritDoc
      */
-    public function getDescription()
+    public function getUpdatedAt()
     {
-        return $this->description;
+        return $this->updatedAt;
     }
 }

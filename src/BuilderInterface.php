@@ -7,15 +7,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Builder;
-
-use Xidea\Component\Book\Model\AuthorInterface,
-    Xidea\Component\Book\Model\PublisherInterface;
+namespace Xidea\Book;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookBuilderInterface
+interface BuilderInterface
 {
     /**
      * @return void
@@ -33,7 +30,7 @@ interface BookBuilderInterface
     function setPublisher(PublisherInterface $publisher);
     
     /**
-     * @return \Xidea\Component\Book\Model\BookInterface
+     * @return \Xidea\Book\BookInterface
      */
     function getBook();
 }

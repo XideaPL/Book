@@ -7,21 +7,28 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Book\Loader;
+namespace Xidea\Book\Author;
 
-use Xidea\Component\Base\Loader\ModelLoaderInterface;
+use Xidea\Base\Model\LoaderInterface as ModelLoaderInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface BookLoaderInterface extends ModelLoaderInterface
+interface LoaderInterface extends ModelLoaderInterface
 {
     /**
-     * Returns a book by id.
+     * Returns a author by id.
      * 
      * @param int $id
      * 
-     * @return \Xidea\Component\Book\Model\BookInterface
+     * @return \Xidea\Book\AuthorInterface
      */
     function load($id);
+    
+    /*
+     * @param string|array $name
+     * 
+     * @return array
+     */
+    function loadByName($name);
 }
