@@ -9,12 +9,13 @@
 
 namespace Xidea\Book\Builder;
 
+use Xidea\Book\DirectorInterface;
 use Xidea\Book\BuilderInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-class DefaultDirector implements BookDirectorInterface
+class DefaultDirector implements DirectorInterface
 {
     protected $builder;
     

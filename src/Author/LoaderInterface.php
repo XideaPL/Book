@@ -31,4 +31,14 @@ interface LoaderInterface extends ModelLoaderInterface
      * @return array
      */
     function loadByName($name);
+    
+    /**
+     * Returns a set of objects.
+     * 
+     * @param int $page
+     * @param int $limit
+     * 
+     * @return array
+     */
+    function loadByPage($page = 1, $limit = 25);
 }
